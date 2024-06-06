@@ -1,11 +1,6 @@
-# Comfy Registry Frontend
+# Comfy Org Landing Page
 
-The frontend React App for [Comfy Registry](https://comfyregistry.org).
-
-Registry React Frontend [Github](https://github.com/Comfy-Org/registry-web)
-
-Registry CLI [Github](https://github.com/yoland68/comfy-cli)
-
+The frontend React App for [Comfy Org](https://comfy.org).
 
 ## Getting Started
 
@@ -30,18 +25,8 @@ pnpm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Generate Code Stub based on OpenAPI Spec
-
-Start the dev server.
-
-Currently, the Orval spec is in `orval.config.js`. It points to the OpenAPI spec in your localhost server. This can be changed to staging or prod.
-
-`npx orval`
-
-This generates react queries that you can use in your Components.
-
 ### Deployments
 
 #### Production
 
-Make a PR to the `main` branch. Once merged, Vercel will deploy to https://comfyregistry.org
+Make a PR to the `main` branch. Once merged, Vercel will deploy to production.
