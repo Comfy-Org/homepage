@@ -103,7 +103,9 @@ function Page() {
                     The Vision
                 </h1>
                 <p className="text-[18px] pt-2 text-gray-300">
-                    If OSS models can only be utilized by a handful of cloud providers or closed sourced tools, is AI truly democratized? Our’s core mission is to advance and democratize visual AI tooling by iterating and improving ComfyUI. We believe that the future of AI is open-source, and community-driven. We are building the tools to democratize AI for everyone.
+                Open source AI model will win over the long run against closed models and we are at the beginning of it.
+                Yet if open source models can only be utilized by a handful of cloud providers or closed sourced tools, is AI truly democratized?
+                Our core mission is to advance and democratize AI tooling. We believe that the future of AI tooling is open-source and community-driven.
                 </p>
                 <h1 className="text-[20px] font-bold text-white">
                     The Team
