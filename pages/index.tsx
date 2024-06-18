@@ -213,7 +213,7 @@ function Page() {
                                 </div>
                             </div>
                             <p>
-                                pythongosssss is a major contributor to ComfyUI and the creator of ComfyUI-Custom-Scripts
+                                pythongosssss is a major contributor to ComfyUI and the creator of ComfyUI-Custom-Scripts.
                             </p>
                         </div>
                     </div>
@@ -338,7 +338,7 @@ function Page() {
                             </div>
                             <p>
                                 HaoHao is passionate about connecting w/ creatives and developers in Comfy ecosystem. Prior to Comfy, he ran software conferences and founded an ed-tech startup.
-                                He loves dressing up as a &quot;banana man&quot;
+                                He loves dressing up as a &quot;banana man&quot;.
                             </p>
                         </div>
                     </div>
