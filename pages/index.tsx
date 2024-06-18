@@ -103,9 +103,9 @@ function Page() {
                     The Vision
                 </h1>
                 <p className="text-[18px] pt-2 text-gray-300">
-                Open source AI model will win over the long run against closed models and we are at the beginning of it.
-                Yet if open source models can only be utilized by a handful of cloud providers or closed sourced tools, is AI truly democratized?
-                Our core mission is to advance and democratize AI tooling. We believe that the future of AI tooling is open-source and community-driven.
+                    Open source AI model will win over the long run against closed models and we are at the beginning of it.
+                    Yet if open source models can only be utilized by a handful of cloud providers or closed sourced tools, is AI truly democratized?
+                    Our core mission is to advance and democratize AI tooling. We believe that the future of AI tooling is open-source and community-driven.
                 </p>
                 <h1 className="text-[20px] font-bold text-white">
                     The Team
@@ -390,15 +390,15 @@ function Page() {
                 },
                 {
                     question: "How do you sustain the project?",
-                    answer: "We currently do not make any money. We are backed by supporters and investors who are aligned with our vision for developing open-source AI tooling, if you are one, please reach out to us at hello@comfy.org. We do intent to make money in the future."
+                    answer: "We currently do not make any money. We are backed by supporters and investors who are aligned with our vision for developing open-source AI tooling, if you are one, please reach out to us at hello@comfy.org. We do intend to make money in the future."
                 },
                 {
                     question: "How do you make money?",
-                    answer: "We don't yet. We plan to make money through consulting and enterprise support. It's a proven model(e.g. RedHat), if you can build amazing OSS software that's widely adopted as the industry standard, you can finance the core development while empowering an entire ecosystem. We will never hide/close source features behind a paywall or license."
+                    answer: "We don't yet. We plan to make money through consulting and enterprise support. It's a proven model (e.g. RedHat). If you can build amazing OSS software that's widely adopted as the industry standard, you can finance the core development while empowering an entire ecosystem. We will never hide/close source features behind a paywall or license."
                 },
                 {
-                    question: "How are you address the recent security concerns with ComfyUI?",
-                    answer: "ComfyUI is an application, a backend, and a developer platform. We invest in tools to make using ComfyUI safe and reliable. We host Comfy Registry, the repository hosting custom nodes. Nodes on the registry are semantically versioned and scanned for malicious behavior. While we can't catch everything, we will soon add checks to see if nodes include custom pip wheels, execute arbitrary sys calls or call outside APIs. We also host a Continuous Integration Testing Suite that tests new commits in Comfy against workflows on various operating systems and GPUs to make Comfy more reliable to use."
+                    question: "How will you address the recent security concerns with ComfyUI?",
+                    answer: "Nodes on the registry are semantically versioned and scanned for malicious behavior. While we can't catch everything, we will soon add checks to see if nodes include custom pip wheels, execute arbitrary sys calls or call outside APIs. A human will review flagged nodes. More importantly, when a security concern is found we will ban the node and notify any users who have installed it. This process will be improved over time."
                 },
                 {
                     question: "What other projects are you working on?",
@@ -414,11 +414,11 @@ function Page() {
                 },
                 {
                     question: "How can I contribute to ComfyUI?",
-                    answer: "You can voice your feedback and participate in our discord/matrix channel. If you can also help submitting a bug report or feature request, please create an issue on Github. Many issues are tagged #good-first-issue , which are good for new contributors to Comfy. Otherwise please submit a PR and we will review it. In the near future, we will also introduct governance structure similar to other OSS projects."
+                    answer: "You can voice your feedback and participate in our discord/matrix channel. If you can also help submitting a bug report or feature request, please create an issue on Github. Many issues are tagged #good-first-issue , which are good for new contributors to Comfy. Otherwise please submit a PR and we will review it. In the near future, we will also introduce a governance structure similar to other OSS projects."
                 },
                 {
                     question: "How can I stay up to date with Comfy?",
-                    answer: "You can follow us on Twitter, join our Discord or Matrix channel"
+                    answer: "You can follow us on Twitter, join our Discord or Matrix channel."
                 }
                 ]} />
             </div>
