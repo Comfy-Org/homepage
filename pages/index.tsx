@@ -409,7 +409,7 @@ function Page() {
                     answer: "1. Transparency and communication. 2. Open-source and community-driven. 3. Democratizing AI."
                 },
                 {
-                    question: "What about fundational models?",
+                    question: "What about foundation models?",
                     answer: "Despite the recent turmoil in OSS AI commmunity, there are huge amount of advancement in OSS AI models. We are working closely with OSS model builders to bring the best models to ComfyUI. We also plan to put more resources into AI models in the future."
                 },
                 {
