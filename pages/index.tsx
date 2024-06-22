@@ -306,7 +306,7 @@ function Page() {
                                 hongil0316
                                 <div className="ml-2 flex flex-row">
                                     <a
-                                        href="https://github.com/hongil0316"
+                                        href="https://github.com/james03160927"
                                         className="ml-2"
                                     >
                                         <GitHubSVG />
