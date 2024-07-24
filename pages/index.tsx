@@ -1,4 +1,6 @@
+import DownloadButton from '@/components/DownloadButton'
 import FAQContainer from '@/components/FAQ/FAQContainer'
+import { Button, Card } from 'flowbite-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import * as React from 'react'
@@ -85,7 +87,7 @@ function Page() {
 
     return (
         <>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 text-gray-300 ">
                 <div className="flex flex-col justify-center items-center">
                     <Image priority width='500' height='500' src='/images/ComfyUI_00000.png' alt="The first image generated with ComfyUI"
                     ></Image>
@@ -103,10 +105,31 @@ function Page() {
                     The Vision
                 </h1>
                 <p className="text-[18px] pt-2 text-gray-300">
-                    Open source AI model will win over the long run against closed models and we are at the beginning of it.
+                    Open source AI model will win over the long run against closed models and we are only at the beginning.
                     Yet if open source models can only be utilized by a handful of cloud providers or closed sourced tools, is AI truly democratized?
                     Our core mission is to advance and democratize AI tooling. We believe that the future of AI tooling is open-source and community-driven.
                 </p>
+                <h1 className="text-[20px] font-bold text-white">
+                    Getting Started
+                </h1>
+                <div className="flex flex-col gap-2 flex-start">
+                    <div><DownloadButton /></div>
+                </div>
+                <h1 className="text-[20px] font-bold text-white">
+                    Alternative UIs
+                </h1>
+                <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex-1 w-full sm:w-1/3">
+                        <AlternativeUI name="SwarmUI"
+                            description="Very easy to get started and supports multi-GPU generation."
+                            url="https://github.com/mcmonkeyprojects/SwarmUI" /></div>
+                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Krita"
+                        description="ComfyUI Plugin for Krita."
+                        url="https://github.com/Acly/krita-ai-diffusion" /></div>
+                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Blender"
+                        description="ComfyUI Plugin for Blender."
+                        url="https://github.com/AIGODLIKE/ComfyUI-BlenderAI-node" /></div>
+                </div>
                 <h1 className="text-[20px] font-bold text-white">
                     The Team
                 </h1>
@@ -343,7 +366,6 @@ function Page() {
                         </div>
                     </div>
                 </div>
-
                 <h1 className="text-[20px] font-bold text-white">
                     Contact Us
                 </h1>
@@ -425,5 +447,22 @@ function Page() {
         </>
     )
 }
+
+const AlternativeUI = ({ name, description, url }) => (
+    <Card className="h-full flex flex-col bg-gray-900">
+        <div className="flex-grow">
+            <h5 className="text-2xl font-bold tracking-tight ">
+                {name}
+            </h5>
+            <p className="font-normal text-gray-400 line-clamp-2">
+                {description}
+            </p>
+        </div>
+        <Button href={url} target="_blank" className="bg-gray-800 border-none outline-none">
+            Check it out
+        </Button>
+
+    </Card>
+);
 
 export default Page

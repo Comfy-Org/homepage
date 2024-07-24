@@ -27,7 +27,7 @@ const DiscordIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     <FaDiscord {...props} className="text-xl" />
 )
 
-const Header: React.FC<HeaderProps> = ({}) => {
+const Header: React.FC<HeaderProps> = ({ }) => {
     return (
         <Navbar
             fluid
