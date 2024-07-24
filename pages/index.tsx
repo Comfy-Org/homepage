@@ -115,21 +115,7 @@ function Page() {
                 <div className="flex flex-col gap-2 flex-start">
                     <div><DownloadButton /></div>
                 </div>
-                <h1 className="text-[20px] font-bold text-white">
-                    Alternative UIs
-                </h1>
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="flex-1 w-full sm:w-1/3">
-                        <AlternativeUI name="SwarmUI"
-                            description="Very easy to get started and supports multi-GPU generation."
-                            url="https://github.com/mcmonkeyprojects/SwarmUI" /></div>
-                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Krita"
-                        description="ComfyUI Plugin for Krita."
-                        url="https://github.com/Acly/krita-ai-diffusion" /></div>
-                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Blender"
-                        description="ComfyUI Plugin for Blender."
-                        url="https://github.com/AIGODLIKE/ComfyUI-BlenderAI-node" /></div>
-                </div>
+
                 <h1 className="text-[20px] font-bold text-white">
                     The Team
                 </h1>
@@ -443,7 +429,24 @@ function Page() {
                     answer: "You can follow us on Twitter, join our Discord or Matrix channel."
                 }
                 ]} />
+                <h1 className="text-[20px] font-bold text-white">
+                    Alternative UIs
+                </h1>
+                <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex-1 w-full sm:w-1/3">
+                        <AlternativeUI name="SwarmUI"
+                            description="Very easy to get started and supports multi-GPU generation."
+                            url="https://github.com/mcmonkeyprojects/SwarmUI" /></div>
+                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Krita"
+                        description="ComfyUI Plugin for Krita."
+                        url="https://github.com/Acly/krita-ai-diffusion" /></div>
+                    <div className="flex-1 w-full sm:w-1/3"><AlternativeUI name="Blender"
+                        description="ComfyUI Plugin for Blender."
+                        url="https://github.com/AIGODLIKE/ComfyUI-BlenderAI-node" /></div>
+                </div>
             </div>
+
+
         </>
     )
 }
