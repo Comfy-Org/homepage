@@ -444,12 +444,37 @@ function Page() {
                         description="ComfyUI Plugin for Blender."
                         url="https://github.com/AIGODLIKE/ComfyUI-BlenderAI-node" /></div>
                 </div>
+                <Footer />
             </div>
 
 
         </>
     )
 }
+
+const Footer = () => (
+    <footer className="bg-gray-900 text-white py-4 mt-5">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div className="mb-4 sm:mb-0 md:flex md:items-center">
+                <h1 className="text-[20px] font-bold text-white sm:mr-4">Connect with us:</h1>
+                <ul className="list-none flex space-x-4">
+                    <li>
+                        <a href="/twitter" target="_blank" rel="noopener noreferrer" className="text-blue-600">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="discord" target="_blank" rel="noopener noreferrer" className="text-blue-600">Discord</a>
+                    </li>
+                    <li>
+                        <a href="mailto:hello@comfy.org" className="text-blue-600">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div className="text-gray-400">
+                © {new Date().getFullYear()} Comfy Org. All rights reserved.
+            </div>
+        </div>
+    </footer>
+);
 
 const AlternativeUI = ({ name, description, url }) => (
     <Card className="h-full flex flex-col bg-gray-900">
