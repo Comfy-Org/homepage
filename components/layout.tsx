@@ -10,10 +10,6 @@ mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN as string, { track_pageview
 
 
 export default function Layout({ children }: React.PropsWithChildren) {
-    useEffect(()=>{
-        if(typeof window === 'undefined') return; // skip ssr
-        mixpanel.track('homepage-browse-event', {pathname: location.pathname})
-    },[])
     return (
         <>
             <Head>
