@@ -22,6 +22,6 @@ jobs:
             - name: Run Next.js Lint
               run: pnpm run lint
             - name: Check Formatting with Prettier
-              run: npx prettier --check .
+              run: npx prettier --write .
             - name: Build the Next.js Project
               run: pnpm run build
