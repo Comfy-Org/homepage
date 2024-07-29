@@ -6,7 +6,8 @@ import 'react-toastify/dist/ReactToastify.css'
 import Header from './Header/Header'
 import Container from './common/Container'
 
-mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN as string, { track_pageview: true, persistence: 'localStorage' })
+const DIE = (err:string)=>{throw new Error(err)}
+mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN || DIE('missing MIXPANEL_TOKEN'), { track_pageview: true, persistence: 'localStorage' })
 
 
 export default function Layout({ children }: React.PropsWithChildren) {
