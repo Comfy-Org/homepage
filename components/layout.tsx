@@ -1,15 +1,14 @@
-import React from 'react'
+import mixpanel from 'mixpanel-browser'
 import Head from 'next/head'
-import { ThemeModeScript } from 'flowbite-react'
+import React from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Header from './Header/Header'
 import Container from './common/Container'
-import 'react-toastify/dist/ReactToastify.css'
-import { ToastContainer } from 'react-toastify'
-import mixpanel from 'mixpanel-browser'
 
-mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN as string, { track_pageview: true, persistence: 'localStorage' })
+const DIE = (err:string)=>{throw new Error(err)}
+mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN || DIE('missing MIXPANEL_TOKEN'), { track_pageview: true, persistence: 'localStorage' })
 
-import Image from 'next/image'
 
 export default function Layout({ children }: React.PropsWithChildren) {
     return (

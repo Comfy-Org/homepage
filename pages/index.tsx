@@ -3,7 +3,6 @@ import FAQContainer from '@/components/FAQ/FAQContainer'
 import { Button, Card } from 'flowbite-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import * as React from 'react'
 
 const TwitterSVG = () => (
     <svg
